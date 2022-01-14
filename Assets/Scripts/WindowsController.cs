@@ -20,8 +20,8 @@ public class WindowsController : MonoBehaviour {
         useWindow1.onClick.AddListener(OpenMenu);
 
         openWindow2.onClick.AddListener(OpenWindow2);
-        //crossWindow2.onClick.AddListener(OpenMenu);
-        //useWindow2.onClick.AddListener(OpenMenu);
+        crossWindow2.onClick.AddListener(OpenMenu);
+        useWindow2.onClick.AddListener(OpenMenu);
 
         openMenu.onClick.AddListener(OpenMenu);
     }
