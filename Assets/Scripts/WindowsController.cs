@@ -5,6 +5,10 @@ public class WindowsController : MonoBehaviour {
     [SerializeField] private Button openWindow1;
     [SerializeField] private Button openWindow2;
     [SerializeField] private Button openMenu;
+    [SerializeField] private Button crossWindow1;
+    [SerializeField] private Button useWindow1;
+    [SerializeField] private Button crossWindow2;
+    [SerializeField] private Button useWindow2;
 
     [SerializeField] private GameObject window1;
     [SerializeField] private GameObject window2;
@@ -12,7 +16,13 @@ public class WindowsController : MonoBehaviour {
     
     private void Awake() {
         openWindow1.onClick.AddListener(OpenWindow1);
+        crossWindow1.onClick.AddListener(OpenMenu);
+        useWindow1.onClick.AddListener(OpenMenu);
+
         openWindow2.onClick.AddListener(OpenWindow2);
+        //crossWindow2.onClick.AddListener(OpenMenu);
+        //useWindow2.onClick.AddListener(OpenMenu);
+
         openMenu.onClick.AddListener(OpenMenu);
     }
 
